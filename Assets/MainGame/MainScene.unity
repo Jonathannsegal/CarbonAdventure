@@ -297,7 +297,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Coal Plant
+  m_Text: Boats
 --- !u!222 &206513048
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 281921528}
   - component: {fileID: 281921527}
   m_Layer: 5
-  m_Name: Build Button
+  m_Name: Livestock Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -443,9 +443,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.81568635, g: 0.20392159, b: 0.20392159, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.85882354, g: 0.32156864, b: 0.32156864, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8588236, g: 0.32156864, b: 0.32156864, a: 1}
+    m_PressedColor: {r: 0.81568635, g: 0.20392159, b: 0.20392159, a: 1}
+    m_SelectedColor: {r: 0.8588236, g: 0.32156864, b: 0.32156864, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -460,11 +460,22 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 281921528}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 902367221}
+        m_MethodName: livestock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &281921528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,9 +572,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.07058824, g: 0.6431373, b: 0.12941177, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.24705882, g: 0.69803923, b: 0.2901961, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.30588236, g: 0.7176471, b: 0.34509805, a: 1}
+    m_PressedColor: {r: 0.07058824, g: 0.6431373, b: 0.12941177, a: 1}
+    m_SelectedColor: {r: 0.30588236, g: 0.7176471, b: 0.34509805, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -578,7 +589,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 297652534}
   m_OnClick:
     m_PersistentCalls:
@@ -643,7 +654,7 @@ GameObject:
   - component: {fileID: 328869378}
   - component: {fileID: 328869377}
   m_Layer: 5
-  m_Name: Build Button (1)
+  m_Name: City Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -690,9 +701,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.7843138, g: 0.19607845, b: 0.19607845, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.85882354, g: 0.32156864, b: 0.32156864, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8588236, g: 0.32156864, b: 0.32156864, a: 1}
+    m_PressedColor: {r: 0.7843138, g: 0.19607845, b: 0.19607845, a: 1}
+    m_SelectedColor: {r: 0.8588236, g: 0.32156864, b: 0.32156864, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -707,11 +718,22 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 328869378}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 902367221}
+        m_MethodName: city
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &328869378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,7 +783,7 @@ GameObject:
   - component: {fileID: 392921195}
   - component: {fileID: 392921194}
   m_Layer: 5
-  m_Name: Build Button (2)
+  m_Name: Coal Plant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -808,9 +830,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.7843138, g: 0.19607845, b: 0.19607845, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.85882354, g: 0.32156864, b: 0.32156864, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8588236, g: 0.32156864, b: 0.32156864, a: 1}
+    m_PressedColor: {r: 0.6862745, g: 0.17254902, b: 0.17254902, a: 1}
+    m_SelectedColor: {r: 0.8588236, g: 0.32156864, b: 0.32156864, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -825,11 +847,22 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 392921195}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 902367221}
+        m_MethodName: coalPlant
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &392921195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1603,9 +1636,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.07058824, g: 0.6431373, b: 0.12941177, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.24705882, g: 0.69803923, b: 0.2901961, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.30588236, g: 0.7176471, b: 0.34509805, a: 1}
+    m_PressedColor: {r: 0.07058824, g: 0.6431373, b: 0.12941177, a: 1}
+    m_SelectedColor: {r: 0.30588236, g: 0.7176471, b: 0.34509805, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1620,7 +1653,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 778123190}
   m_OnClick:
     m_PersistentCalls:
@@ -1740,7 +1773,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Build
+  m_Text: City
 --- !u!222 &793109432
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1881,6 +1914,14 @@ MonoBehaviour:
   carbonCount: 50
   moneyCount: 1000
   treeCount: 0
+  treeButton: {fileID: 1061985830}
+  solarButton: {fileID: 297652533}
+  windButton: {fileID: 778123189}
+  hydroButton: {fileID: 1057572501}
+  livestockButton: {fileID: 281921527}
+  boatButton: {fileID: 1982344828}
+  cityButton: {fileID: 328869377}
+  coalPlantButton: {fileID: 392921194}
 --- !u!222 &902367222
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1949,9 +1990,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.06666667, g: 0.61960787, b: 0.1254902, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.24705882, g: 0.69803923, b: 0.2901961, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.30588236, g: 0.7176471, b: 0.34509805, a: 1}
+    m_PressedColor: {r: 0.06666667, g: 0.61960787, b: 0.1254902, a: 1}
+    m_SelectedColor: {r: 0.30588236, g: 0.7176471, b: 0.34509805, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1966,7 +2007,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1057572502}
   m_OnClick:
     m_PersistentCalls:
@@ -2078,9 +2119,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.072668225, g: 0.6698113, b: 0.13156684, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.24697402, g: 0.6981132, b: 0.29149437, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.3077608, g: 0.7169812, b: 0.3469036, a: 1}
+    m_PressedColor: {r: 0.07450981, g: 0.67058825, b: 0.13333334, a: 1}
+    m_SelectedColor: {r: 0.30588236, g: 0.7176471, b: 0.34509805, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2215,7 +2256,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Build
+  m_Text: Livestock
 --- !u!222 &1415174157
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2385,7 +2426,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Build
+  m_Text: Coal Plant
 --- !u!222 &1686875917
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2480,7 +2521,7 @@ GameObject:
   - component: {fileID: 1982344829}
   - component: {fileID: 1982344828}
   m_Layer: 5
-  m_Name: Build Coal Plant Button
+  m_Name: Boats Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2527,9 +2568,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.7843138, g: 0.19607845, b: 0.19607845, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.85882354, g: 0.32156864, b: 0.32156864, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8588236, g: 0.32156864, b: 0.32156864, a: 1}
+    m_PressedColor: {r: 0.7843138, g: 0.19607845, b: 0.19607845, a: 1}
+    m_SelectedColor: {r: 0.8588236, g: 0.32156864, b: 0.32156864, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2544,11 +2585,22 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1982344829}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 902367221}
+        m_MethodName: boats
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1982344829
 MonoBehaviour:
   m_ObjectHideFlags: 0
