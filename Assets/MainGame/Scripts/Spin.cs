@@ -5,10 +5,10 @@ using System.Collections;
 public class Spin : MonoBehaviour{
 	
 	public float speed;
-	
+    public Vector3 rotationVector;
 	
 	void Update ()
 	{
-		transform.Rotate(Vector3.up,speed * Time.deltaTime);
+		transform.Rotate(rotationVector, speed * Time.deltaTime);
 	}
 }
